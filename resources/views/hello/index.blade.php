@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Hello/index</title>
+    <title>Blade/index</title>
     <style>
       body {
         font-size: 16pt;
@@ -17,5 +17,10 @@
   <body>
     <h1>Blade/Index</h1>
     <p>{{$msg}}</p>
+    <form method="POST" action="/hello">
+      {{ csrf_field() }}
+      <input type="text" name="msg">
+      <input type="submit">
+    </form>
   </body>
 </html>
