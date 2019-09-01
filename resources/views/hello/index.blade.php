@@ -9,9 +9,15 @@
 
 @section('content')
   <p>ここが本文のコンテンツです。</p>
-  <p>必要なだけ記述できます。</p>
 
-  @include('components.message', ['msg_title'=>'OK', 'msg_content'=>'サブビューです。'])
+  <p>
+    Controller value<br>
+    'message' = {{$message}}
+  </p>
+  <p>
+    View composer value<br>
+    'view_message' = {{$view_message}}
+  </p>
 
 @endsection
 
